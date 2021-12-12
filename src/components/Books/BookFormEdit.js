@@ -14,7 +14,6 @@ const BookForm = (props) => {
   const [enteredPrice, setEnteredPrice] = useState("");
   const [bookId, setBookId] = useState();
   const [filteredAuthor, setFilteredAuthor] = useState();
-  const [enteredAuthorId, setEnteredAuthorId] = useState();
   useEffect(() => {
     fetch(`${URL}/books/findDetail/${props.bookId}`, {
       method: "GET",
@@ -47,7 +46,6 @@ const BookForm = (props) => {
   };
   const filterChangeHandler = (selectedAuthor) => {
     console.log("author id: ", selectedAuthor);
-    setEnteredAuthorId(selectedAuthor);
     setFilteredAuthor(selectedAuthor);
   };
   function submitFormHandler(event) {

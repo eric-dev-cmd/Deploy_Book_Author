@@ -1,8 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import BookItemHome from "./BookItemHome";
 import "./HomeListBook.css";
 const HomeListBook = (props) => {
-  console.log(props.books);
   return (
     <div className="content-main">
       <div className="container">
@@ -37,10 +37,10 @@ const HomeListBook = (props) => {
 
               <div className="row">
                 <div className="more">
-                  <a href="#">
+                  <Link>
                     View More
                     <i className="far fa-chevron-down"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -70,8 +70,8 @@ const HomeListBook = (props) => {
                     </div>
                     <div className="vertical-item__note">
                       <div className="note-link">
-                        <a href="#">Episode 122</a>
-                        <a href="#">Episode 121</a>
+                        <Link>Episode 122</Link>
+                        <Link>Episode 121</Link>
                       </div>
 
                       <div className="note-time">
@@ -96,8 +96,8 @@ const HomeListBook = (props) => {
                     </div>
                     <div className="vertical-item__note">
                       <div className="note-link">
-                        <a href="#">Chapter 3</a>
-                        <a href="#">Chapter 2</a>
+                        <Link>Chapter 3</Link>
+                        <Link>Chapter 2</Link>
                       </div>
 
                       <div className="note-time">
@@ -121,8 +121,8 @@ const HomeListBook = (props) => {
                     </div>
                     <div className="vertical-item__note">
                       <div className="note-link">
-                        <a href="#">Episode 122</a>
-                        <a href="#">Episode 121</a>
+                        <Link>Episode 122</Link>
+                        <Link>Episode 121</Link>
                       </div>
 
                       <div className="note-time">
@@ -147,8 +147,8 @@ const HomeListBook = (props) => {
                     </div>
                     <div className="vertical-item__note">
                       <div className="note-link">
-                        <a href="#">Episode 122</a>
-                        <a href="#">Episode 121</a>
+                        <Link>Episode 122</Link>
+                        <Link>Episode 121</Link>
                       </div>
 
                       <div className="note-time">
@@ -160,7 +160,7 @@ const HomeListBook = (props) => {
                 </div>
 
                 <div className="more-vertical">
-                  <a href="#">Here for more Popular Manga</a>
+                  <Link>Here for more Popular Manga</Link>
                 </div>
               </div>
             </div>

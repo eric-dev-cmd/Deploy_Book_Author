@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
-import { useHistory } from "react-router-dom";
 import { Fragment } from "react";
 const BookItem = (props) => {
-  const history = useHistory();
   const { id, title, price, publishedYear, imageUrl } = props;
 
   const deleteBookItem = (bookId) => {

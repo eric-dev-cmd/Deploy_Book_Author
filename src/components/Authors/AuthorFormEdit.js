@@ -35,7 +35,7 @@ const AuthorFormEdit = (props) => {
         setArea(data.area);
         setAuthorId(data.id);
       });
-  }, []);
+  }, [props.authorId]);
 
   const firstNameChangeHandler = (event) => {
     setEnteredFirstName(event.target.value);
