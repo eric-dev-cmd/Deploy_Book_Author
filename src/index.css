@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: rgb(255,253,252);
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  color: #000;
+
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+a{
+  text-decoration: none;
+}
+
+.centered {
+  margin: 3rem auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.focused {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* .btn {
+  text-decoration: none;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 5%,
+    rgba(22, 9, 121, 0.8939950980392157) 49%,
+    rgba(27, 127, 175, 1) 100%
+  );
+  color: white;
+  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 5%,
+    rgba(22, 9, 121, 0.8939950980392157) 49%,
+    rgba(27, 127, 175, 1) 100%
+  );
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 5%,
+    rgba(22, 9, 121, 0.8939950980392157) 49%,
+    rgba(28, 128, 178, 1) 100%
+  );
+  border-color: #0756bd;
+  color: white; 
+  opacity: .9;
+} */
+
+.btn--flat {
+  cursor: pointer;
+  font: inherit;
+  color: #000;
+  border: none;
+  background-color: none;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+}
+
+.btn--flat:hover,
+.btn--flat:active {
+  background-color: #172b89;
+  color: white;
+}
